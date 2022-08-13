@@ -1,0 +1,109 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.hero{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(232, 170, 203);
+    position: relative;
+}
+
+.hero h1{
+    text-align: center;
+    padding-top: 25px ;
+    font-size: 40px;
+    color: rgb(28, 28, 243);
+}
+
+.slide-row{
+    width: 2400px;
+    position: relative;
+    display: flex;
+    transition: all .5s ease;
+}
+.slide-col{
+    width: 600px;
+    position: relative;
+    height: 400px;
+
+}
+
+.container{
+    width: 600px;
+    height: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.testimonial{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.user-img{
+    position: absolute;
+    height: 100%;
+    top: 0;
+    right: 0;
+    background-color: #33ff33;
+    border-radius: 10px;
+}
+
+.user-img img{
+    height: 100%;
+    border-radius: 10px;
+}
+
+.user-text{
+    width: 360px;
+    height: 250px;
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 10px;
+    padding: 45px;
+    box-sizing: border-box;
+    color: rgb(9, 2, 8);
+    z-index: 4;
+}
+
+.user-text p{
+    font-style: 18px;
+    line-height: 20px;
+}
+
+.user-text h3{
+    margin: 24px 0 5px;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+
+.indicator{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -44px;
+}
+
+.indicator .btn{
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    cursor: pointer;
+    margin: 5px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 14px;
+    transition: .5s ease;
+}
+
+.indicator .active {
+    width: 40px;
+}
